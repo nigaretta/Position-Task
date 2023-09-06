@@ -1,0 +1,44 @@
+body {
+    background-image: url(amongus.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+.fixed {
+    position:fixed;
+    text-align: center;
+    margin-left:35%;
+    margin-top:20%;
+    width:300px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: rgb(166, 166, 212);
+    transition: width 2s, height 2s, transform 2s;
+}
+
+@keyframes example {
+    0% {background-color: rgb(209, 140, 140);}
+    25% {background-color: rgb(138, 193, 193); }
+    50% {background-color: rgb(221, 221, 119);}
+    100% {background-color: rgb(219, 176, 96);}
+}
+
+.fixed:hover {
+    transform: rotate(360deg);
+    width:500px;
+}
+
+p {
+    color:rgb(202, 202, 175);
+}
+
+.description{
+    color:black;
+}
+
+.description:hover::after{
+    content:"her sey lorem ucun.";
+    background-color: rgb(148, 120, 174);
+    color: white;
+}
